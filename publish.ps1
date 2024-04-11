@@ -18,4 +18,5 @@ cls
 # publish as exe files (https://learn.microsoft.com/en-us/dotnet/maui/windows/deployment/publish-unpackaged-cli?view=net-maui-8.0)
 #dotnet publish ".\src\MauiAppBasement\MauiAppBasement.csproj" -f $TargetFramework -c Release -p:WindowsPackageType=None -p:WindowsAppSDKSelfContained=true -p:RuntimeIdentifierOverride=$RuntimeIdentifier
 # publish as package (https://learn.microsoft.com/en-us/dotnet/maui/windows/deployment/publish-cli?view=net-maui-8.0)
-dotnet publish ".\src\MauiApp\MauiApp\MauiApp.csproj" -f $TargetFramework -c Release -p:WindowsAppSDKSelfContained=true -p:RuntimeIdentifierOverride=$RuntimeIdentifier -p:PackageCertificateThumbprint=$CertThumb
+dotnet publish ".\src\MauiApp\MauiApp\MauiApp.csproj" -f $TargetFramework -c Release -p:WindowsAppSDKSelfContained=true -p:RuntimeIdentifierOverride=$RuntimeIdentifier
+# -p:PackageCertificateThumbprint=$CertThumb
